@@ -7,6 +7,28 @@
   --secondary-font: "Raleway", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: var(--main-font);
   background: var(--background-color);
@@ -24,6 +46,14 @@ body {
 .menu-link.current {
   color: var(--accent-color);
 }
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /*---------HEADER-------*/
 
 /*.top-header {
