@@ -55,14 +55,25 @@ body {
 }
 
 /*---------HEADER-------*/
+.top-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 
-/*.top-header {
-  position: absolute;
-  width: 1600px;
-  height: 80px;
-  left: 0px;
-  top: 0px;
-}*/
+.block-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
 
 .logo {
   font-family: var(--secondary-font);
@@ -71,6 +82,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+  margin-right: 94px;
 }
 
 .blue-text-logo {
@@ -95,12 +107,18 @@ body {
   color: var(--accent-color);
 }
 
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-mail {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--small-text-color);
+  margin-right: 50px;
+  margin-left: auto;
 }
 
 .header-tel {
@@ -123,12 +141,13 @@ body {
 
 /*---------HERO-------*/
 .hero {
-  /*position: absolute;
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;*/
   background: #2f303a;
+}
+
+.hero-wrap {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero-title {
@@ -139,6 +158,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-color);
+  margin-bottom: 30px;
 }
 
 .modal-btn {
@@ -146,16 +166,18 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--background-color);
   cursor: pointer;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: var(--accent-color);
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: auto;
+  padding: 10px 32px;
 }
 
 .modal-btn:hover,
@@ -270,6 +292,7 @@ body {
   background: #f5f4fa;
   border-radius: 4px;
   cursor: pointer;
+  border: #f5f4fa;
 }
 
 .portfolio-btn.current {
@@ -277,6 +300,7 @@ body {
   background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: var(--accent-color);
 }
 
 .portfolio-btn:hover,
