@@ -187,10 +187,6 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: var(--accent-color);
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
   padding: 10px 32px;
 }
 
@@ -202,7 +198,7 @@ body {
 /*-----------Features---------*/
 .features-list {
   display: flex;
-  justify-items: space-between;
+  justify-content: space-between;
 }
 
 .features-item {
@@ -215,6 +211,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .features-item-desc {
@@ -368,7 +365,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
   border: #f5f4fa;
-  display: block;
+  padding: 8px 24px;
   margin-left: 10px;
   margin-top: 10px;
   flex-basis: calc((100% - 40px) / 5);
@@ -400,8 +397,12 @@ body {
 .work-item {
   margin-left: 30px;
   margin-top: 30px;
-  /* border: 1px solid #eeeeee; */
   flex-basis: calc((100% - 90px) / 3);
+}
+
+.work-item-text {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 .work-name {
@@ -409,6 +410,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  padding-bottom: 4px;
 }
 
 .work-type {
