@@ -55,8 +55,8 @@ body {
 }
 
 .section {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .visually-hidden {
@@ -156,9 +156,6 @@ body {
 /*---------HERO-------*/
 .hero {
   background: #2f303a;
-}
-
-.hero-wrap {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -168,11 +165,11 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-color);
-  margin-bottom: 30px;
+  width: 696px;
+  margin: 0 auto 30px;
 }
 
 .modal-btn {
@@ -222,7 +219,7 @@ body {
 }
 
 /*-----------Activity---------*/
-.activity-wrap {
+.activity {
   padding-top: 0;
 }
 
@@ -237,7 +234,7 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /*----------Team--------*/
@@ -251,7 +248,7 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .team-cards-list {
@@ -266,36 +263,32 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 120px) / 4);
 }
 
-.member-name {
-  font-weight: 500;
+.team-card-text {
+  text-align: center;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.member-name {
+  font-weight: 500;
   margin-bottom: 10px;
 }
 
 .member-proffesion {
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
   color: var(--small-text-color);
 }
 
 /*---------FOOTER-------*/
 .footer {
   background: #2f303a;
-}
-
-.footer-wrap {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -349,9 +342,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 50px;
-  margin-left: -10px;
-  margin-top: -10px;
   justify-content: center;
+}
+
+.filter-btn-link:not(:last-child) {
+  margin-right: 10px;
 }
 
 .portfolio-btn {
@@ -364,11 +359,8 @@ body {
   background: #f5f4fa;
   border-radius: 4px;
   cursor: pointer;
-  border: #f5f4fa;
+  border: none;
   padding: 8px 24px;
-  margin-left: 10px;
-  margin-top: 10px;
-  flex-basis: calc((100% - 40px) / 5);
 }
 
 .portfolio-btn.current {
