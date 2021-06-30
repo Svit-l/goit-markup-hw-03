@@ -168,7 +168,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-color);
-  width: 696px;
+  max-width: 696px;
   margin: 0 auto 30px;
 }
 
